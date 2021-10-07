@@ -1,16 +1,23 @@
 {
-    // "suggest.noselect": false,
-    // "suggest.enablePreview": true,
-    "python.jediEnabled": false,
     "python.linting.lintOnSave": true,
-    "python.analysis.diagnosticEnabled": false,
-    "python.autoUpdateLanguageServer": true,
     "python.formatting.autopep8Args": [
         "--ignore=E731"
     ],
     "python.linting.pylintArgs": [
         "--errors-only"
     ],
-    "python.linting.enabled": true
-    // "python.linting.pylintEnabled": false
+    "languageserver": {
+        "ccls": {
+            "command": "ccls",
+            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+            "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
+            "initializationOptions": {
+                "cache": {
+                    "directory": "/tmp/ccls"
+                }
+            }
+        }
+    },
+    "diagnostic.enable": false,
+    "pyright.disableDiagnostics": true
 }

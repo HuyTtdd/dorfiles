@@ -80,14 +80,15 @@ plugins=(
     git
     vi-mode
     zsh-autosuggestions
+    zsh-abbr
 )
 
 source $ZSH/oh-my-zsh.sh
 
+# User configuration
+
 # If using vi-mode
 KEYTIMEOUT=1 # 10ms
-
-# User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -133,6 +134,11 @@ function mkcd () {
         cd $1
     fi
 }
+
+function load_world () {
+    echo -ne "\033]0;$@\007"
+}
+load_world The Matrix
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

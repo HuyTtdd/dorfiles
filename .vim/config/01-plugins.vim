@@ -18,9 +18,6 @@ Plug 'crusoexia/vim-monokai'
 " Syntax highlight
 " Plug 'sheerun/vim-polyglot', {'for': ['c', 'html', 'php', 'javascipt']}
 
-" Latex
-Plug 'lervag/vimtex'
-
 " Indent line
 Plug 'yggdroot/indentline', {'for': ['c', 'java', 'html', 'php', 'javascipt']}
 

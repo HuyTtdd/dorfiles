@@ -4,7 +4,7 @@
     \ 'coc-json',
     \ 'coc-html',
     \ 'coc-css',
-    \ 'coc-python',
+    \ 'coc-pyright',
     \ 'coc-vimlsp',
     \ 'coc-highlight',
     \ 'coc-emmet'
@@ -102,6 +102,7 @@ nmap <leader>gu <Plug>(GitGutterUndoHunk)
 nnoremap <silent> <C-p> :FZF<CR>
 
 " Formatter
+let g:neoformat_basic_format_trim = 1
 augroup fmt
     autocmd!
     " autocmd bufWritePre * undojoin | Neoformat
