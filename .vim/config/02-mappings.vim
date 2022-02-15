@@ -7,6 +7,11 @@ let g:mapleader=' '
 
 " Select all text
 nnoremap <C-a> <C-\><C-N>ggVG<CR>
+" Accidently add and dont know how to remove
+" nnoremap <C-S-a> <NOP>
+
+" Select & change buffer
+nnoremap <space>b :ls<CR>:b<space>
 
 " Tabs controlling
 noremap <leader>t :tabnew<CR>
@@ -59,7 +64,7 @@ function! RenameFile()
 endfunction
 nnoremap <leader>rf :call RenameFile()<CR>
 
-" Show hightlight groups for current word 
+" Show hightlight groups for current word
 nmap <C-S-S> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
     if !exists('*synstack')

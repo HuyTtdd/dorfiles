@@ -102,12 +102,17 @@ nmap <leader>gu <Plug>(GitGutterUndoHunk)
 nnoremap <silent> <C-p> :FZF<CR>
 
 " Formatter
-let g:neoformat_basic_format_trim = 1
+" let g:neoformat_basic_format_trim = 1
 augroup fmt
     autocmd!
     " autocmd bufWritePre * undojoin | Neoformat
     au BufWritePre * try | undojoin | Neoformat | catch /^Vim\%((\a\+)\)\=:E790/ | finally | silent Neoformat | endtry
 augroup END
+
+" lightline
+let g:lightline = {
+    \ 'colorscheme': 'mytheme'
+  \ }
 
 " Tmux and vim navigate
 let g:tmux_navigator_no_mappings=1

@@ -2,4 +2,4 @@
 	email = tocduchuy@gmail.com
 	name = HuyTD
 [diff]
-    tool = vimdiff
+	tool = vimdiff

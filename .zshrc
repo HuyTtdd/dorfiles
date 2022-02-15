@@ -113,16 +113,25 @@ KEYTIMEOUT=1 # 10ms
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vim="nvim"
+
 alias py="python3"
 
 alias update="sudo apt update"
 alias upgrade="sudo apt upgrade"
 alias autoremove="sudo apt autoremove"
 
+alias ltmux="tmux list-sessions"
+alias ksmux="tmux kill-server"
+
 source ~/.aliases.zsh
 
 function ktmux () {
     tmux kill-session -t $1
+}
+
+function atmux () {
+    tmux attach-session -t $1
 }
 
 function mkcd () {
@@ -139,7 +148,6 @@ function load_world () {
     echo -ne "\033]0;$@\007"
 }
 load_world The Matrix
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh

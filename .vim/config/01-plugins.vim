@@ -59,5 +59,11 @@ Plug 'christoomey/vim-tmux-navigator'
 " PDF
 Plug 'makerj/vim-pdf'
 
+" Tree-sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+"Yanking
+Plug 'svban/YankAssassin.vim'
+
 
 call plug#end()
