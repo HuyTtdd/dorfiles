@@ -113,6 +113,7 @@ KEYTIMEOUT=1 # 10ms
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias vi="nvim"
 alias vim="nvim"
 
 alias py="python3"
@@ -132,6 +133,10 @@ function ktmux () {
 
 function atmux () {
     tmux attach-session -t $1
+}
+
+function imshow () {
+    kitty +kitten icat $1
 }
 
 function mkcd () {

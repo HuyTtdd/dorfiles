@@ -62,8 +62,11 @@ Plug 'makerj/vim-pdf'
 " Tree-sitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-"Yanking
+" Yanking
 Plug 'svban/YankAssassin.vim'
+
+" Fugitive
+Plug 'tpope/vim-fugitive'
 
 
 call plug#end()

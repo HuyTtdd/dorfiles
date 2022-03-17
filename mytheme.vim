@@ -1,5 +1,8 @@
 " =============================================================================
 " Filename: autoload/lightline/colorscheme/mytheme.vim
+" Author: HuyTD
+" License: MIT License
+" Last Change: 2021/11/16 15:54:41.
 " =============================================================================
 
 let s:p = {'normal': {}, 'inactive': {}, 'insert': {}, 'replace': {}, 'visual': {}, 'tabline': {}}

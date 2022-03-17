@@ -111,8 +111,22 @@ augroup END
 
 " lightline
 let g:lightline = {
-    \ 'colorscheme': 'mytheme'
-  \ }
+    \ 'colorscheme': 'mytheme',
+    \ }
+
+let g:lightline.active={
+    \ 'left': [['mode', 'paste'],
+    \           ['fugitive', 'currentfunction', 'filename', 'method', 'modified']]
+    \ }
+
+let g:lightline.component_function={
+    \ 'fugitive': 'FugitiveHead',
+    \ 'currentfunction': 'CocCurrentFunction',
+    \ }
+
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
 
 " Tmux and vim navigate
 let g:tmux_navigator_no_mappings=1
